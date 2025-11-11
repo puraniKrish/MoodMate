@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Girl MoodBot</title>
+<style>
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.ai-girl {
+  position: relative;
+  width: 200px;
+  height: 400px;
+}
+
+/* Glowing hair aura */
+.hair {
+  width: 160px;
+  height: 180px;
+  background: radial-gradient(circle at top, #6a11cb, #2575fc);
+  border-radius: 50% 50% 40% 40%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 25px #6a11cb, 0 0 50px #2575fc;
+}
+
+/* Head */
+.head {
+  width: 140px;
+  height: 140px;
+  background: #ffe0f0;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+
+/* Eyes */
+.eye {
+  width: 25px;
+  height: 35px;
+  background: radial-gradient(circle, #00ffff, #0044ff);
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+}
+.eye.left { left: 25px; }
+.eye.right { right: 25px; }
+
+/* Pupils */
+.pupil {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
+/* Mouth */
+.mouth {
+  width: 40px;
+  height: 10px;
+  background: #ff6fff;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Body */
+.body {
+  width: 100px;
+  height: 180px;
+  background: linear-gradient(180deg, #6a11cb, #2575fc);
+  border-radius: 50px 50px 20px 20px;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 20px #6a11cb, 0 0 40px #2575fc;
+}
+</style>
+</head>
+<body>
+
+<div class="ai-girl">
+  <div class="hair"></div>
+  <div class="head">
+    <div class="eye left"><div class="pupil"></div></div>
+    <div class="eye right"><div class="pupil"></div></div>
+    <div class="mouth"></div>
+  </div>
+  <div class="body"></div>
+</div>
+
+</body>
+</html>
